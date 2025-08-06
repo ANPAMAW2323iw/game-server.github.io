@@ -10,6 +10,45 @@
     <div class="title-container">
       <h1 class="neon">GAME SERVER</h1>
       <a href="game.html" class="start-button">START</a>
+      <div id="tsparticles">
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.3.0/tsparticles.bundle.min.js"></script>
+<script>
+  tsParticles.load("tsparticles", {
+    fullScreen: { enable: false },
+    background: {
+      color: "#000000"
+    },
+    particles: {
+      number: {
+        value: 60,
+        density: { enable: true, area: 800 }
+      },
+      color: {
+        value: "#00ccff" // 青く光る
+      },
+      shape: {
+        type: "circle"
+      },
+      opacity: {
+        value: 0.6,
+        random: true
+      },
+      size: {
+        value: { min: 1, max: 4 },
+        random: true
+      },
+      move: {
+        enable: true,
+        speed: 1,
+        direction: "top", // 上に向かって流れる
+        outModes: {
+          default: "out"
+        }
+      }
+    },
+    detectRetina: true
+  });
+</script>
     </div>
   </body>
 </html>
